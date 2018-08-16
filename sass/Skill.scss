@@ -1,0 +1,111 @@
+@import '_variable';
+
+.skill{  
+    .box{
+        
+        // height: 25vh;
+        // background: url("../asset/bgcolor.jpg") no-repeat top;
+        // background-size: cover;
+        // background-attachment: fixed;
+    }  
+    > h1{
+        font-family: $font-main;
+        font-weight: 200;
+        font-size: 8vh;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+    ._top,._bottom{
+        > h1{
+            font-family: $font-main;
+            font-size: 2rem;
+        }
+        ._box-icon{   
+            
+            p{
+                font-family: $font-main;
+                font-weight: 500;
+            }        
+            div{                     
+                display: inline-block;           
+                padding-top: 35px;
+                background-color: $main-color;
+                background: url("../asset/bgcolor2.jpg") no-repeat center;
+                background-size: cover;
+                // background-attachment: fixed;
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+                margin: 20px 20px;
+                color: #fff;            
+                position: relative;
+
+
+                i{
+                    font-size: 2rem;
+                }
+                &._responsive{
+                    i.fa-desktop{
+                        margin: 0 0.2rem;
+                    }
+                    i.fa-tablet-alt{
+                        font-size: 1.2rem;
+                    }
+                    i.fa-mobile-alt{
+                        font-size: 1rem;
+                    }
+                }
+            }
+            h1{
+                font-size: 5rem;
+            }        
+        }
+    }
+    ._bottom{
+        padding-top: 5vh;
+    }
+}
+
+@media (min-width: 576px) {  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    
+    .skill{    
+        .box{
+        }
+        > h1{
+        }
+        ._top{
+            ._box-icon{   
+                display: inline-block;
+                margin: auto 5vw;
+                p{
+                }        
+                div{
+                    i{          }
+                    &._responsive{
+                        i.fa-desktop{
+                        }
+                        i.fa-tablet-alt{
+                        }
+                        i.fa-mobile-alt{
+                        }
+                    }
+                }
+                h1{
+                }        
+            }
+        }
+        ._middle{
+        }
+        ._bottom{
+        }
+    }
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }

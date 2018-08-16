@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Shrikhand");
+@import url("https://fonts.googleapis.com/css?family=Oswald:200,400,500");
+.footer {
+  padding: 10vh 0;
+  background: #fff;
+  font-family: "Oswald", sans-serif;
+}
+.footer .container {
+  color: #292929;
+}
+
+/*# sourceMappingURL=Footer.css.map */

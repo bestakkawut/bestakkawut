@@ -1,0 +1,318 @@
+@import '_variable';
+.profile{
+    height: 100%;
+    min-height: 100vh;
+}
+.intro{
+    // position: relative;
+    padding-top: 5%;
+    padding-bottom: 5vh;
+    // background: gray;
+
+    ._introduce{
+        font-family: $font-main;
+        text-align: left;
+        h1{               
+            font-weight: 200;              
+            font-size: 2.4rem;
+            letter-spacing: 0.4rem;
+        }
+        
+        p{
+            font-weight: 200;
+            color: $second-color;
+            font-size: 1.2rem;
+            letter-spacing: 0.1rem;            
+            font-style: italic;
+        }
+    }
+
+    .m_introduce{
+        font-family: $font-main;        
+        div:first-child{
+            border-right: 1px solid #292929;
+            display: inline-block;
+            padding-right: 10px;
+            h1{
+                text-align: left;
+                font-family: $font-main;
+                font-size: 3rem;
+                font-weight: 500;
+                letter-spacing: 0.2rem;
+            }
+        }
+        div:nth-child(2){
+            display: inline-block;
+            padding-left: 10px;            
+            text-align: left;
+            h1{               
+                font-weight: 200;              
+                font-size: 3rem;
+                letter-spacing: 0.4rem;
+            }            
+        }        
+        p{
+            margin-top: 10px;
+            font-weight: 200;
+            color: $second-color;
+            font-size: 1.2rem;
+            letter-spacing: 0.1rem;            
+            font-style: italic;
+        }
+    }
+
+    .content{
+
+        &._top{
+            ._container{                
+                padding-left: 15px;
+                padding-right: 15px;                
+                > h1{
+                    text-align: left;
+                    font-family: $font-main;
+                    font-size: 2.2rem;
+                    font-weight: 500;
+                    letter-spacing: 0.4rem;
+                    > span{
+                        letter-spacing: 0.1rem;
+                    }
+                }
+                .picture{
+                    margin-left: -15px;
+                    margin-right: -15px;
+
+                    margin-top: 5vh;
+                    margin-bottom: 5vh;
+
+                    height: 150px;
+                    background: no-repeat center url("../asset/bgbest.png");
+                    background-size: cover;
+                }
+                .social{
+                    text-align: center;
+                    span{
+                        margin-left: 15px;
+                        &:first-child{
+                            display: inline-block;
+                            margin-bottom: 15px;
+                        }
+                    }
+                    .text{
+                        color: $second-color;
+                        padding-right: 20px;
+                    }
+                    .boxicon{
+                        background-color: #fff;
+                        color: $main-color;                        
+                        border: 1px solid $main-color;                        
+                        padding: 5px 0;
+                        text-align: center;                            
+                        i{
+                            width: 30px;
+                            
+                        }
+                    }
+                }
+            }
+        }
+
+        &._bottom{ 
+
+            top: 0;            
+            ._container{
+                padding-top: 5em;
+                padding-left: 5%;
+                padding-right: 1em;
+                text-align: left;
+                font-family: $font-main;
+            }
+        }
+    }
+}
+
+.menu{
+    ._container{
+        button{
+            border: #292929 solid 1px;
+            background: white;
+            font: 200 1rem $font-main ;
+            letter-spacing: 0.2rem;
+            outline: none;
+            border-radius: 15px;
+            padding: 5px 15px;
+            margin: 0 0.5%;
+            &:hover,&:active{
+                background: #292929;
+                color: #fff;
+                transition: 0.4s;
+                cursor: pointer;
+            }
+        }
+        
+    }
+}
+ 
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+    .intro{
+    
+        ._introduce{
+            h1{               
+            }
+            
+            p{
+            }
+        }
+    
+        .m_introduce{            
+        }
+    
+        .content{
+    
+            &._top{
+                ._container{                         
+                    > h1{ 
+                    }
+                    .picture{
+                        height: 200px;
+                        margin-top: 10vh;
+                        margin-bottom: 10vh;
+                    }
+                    .social{
+                    }
+                }
+            }
+    
+            &._bottom{ 
+                ._container{
+                }
+            }
+        }
+    }
+    
+    .menu{
+        ._container{
+            button{
+            }
+            
+        }
+    }
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    
+.intro{
+    position: relative;
+    padding-top: 8rem;
+    padding-bottom: 12vh;
+    .content{
+        &._left,&._right{
+            width: 50%;
+            height: 100%;           
+            display: inline-flex;
+        }
+        &._right{       
+            ._container{
+                padding-left: 5%;
+                padding-right: 1em;
+                padding-top: 5em;   
+                padding-bottom: 10em;
+                border-left: #292929 solid 1px;
+                text-align: left;
+                font-family: $font-main;
+
+                h1{                    
+                    font-weight: 200;
+                    font-size: 4rem;
+                    font-style: italic;
+                    letter-spacing: 1.15rem;
+                }
+                p{
+                    color: $second-color;
+                    font-style: italic;
+                    font-size: 1.4rem;
+                    letter-spacing: 0.1rem;
+                }
+            }
+            
+        }
+        &._left{            
+            ._container{
+                margin: auto; 
+                // border-right: #292929 solid 1px;
+                width: 100%;
+                height: 100%;
+                padding-top: 5em;   
+                padding-right: 5%;
+                h1{
+                    text-align: right;
+                    font-family: $font-main;
+                    font-size: 4rem;
+                    font-weight: 500;
+                    letter-spacing: 0.7rem;
+                    > span{
+                        letter-spacing: 0.1rem;
+                    }
+                }
+
+                .picture{
+                    margin-top: 10px;
+                    margin-right: 0;
+                    margin-bottom: 1.1em;                
+                    padding-top: 15px;
+                    height: 180px;         
+                }
+                .social{
+                    text-align: right;
+                    span{
+                        margin-left: 15px;
+                    }
+                    .text{
+                        color: $second-color;
+                        padding-right: 20px;
+                    }
+                    .boxicon{
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.menu{
+    ._container{
+        padding-bottom: 5em;
+        button{
+            border: #292929 solid 1px;
+            background: white;
+            font: 200 2rem $font-main ;
+            letter-spacing: 0.2rem;
+            margin: 0 15px;
+            outline: none;
+            border-radius: 15px;
+            padding: 5px 25px;
+            &:hover{
+                background: #292929;
+                color: #fff;
+                transition: 0.4s;
+                cursor: pointer;
+            }
+        }
+        
+    }
+}
+
+
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+ } 

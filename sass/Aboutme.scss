@@ -1,0 +1,227 @@
+@import '_variable';
+
+.aboutme{
+    background: $main-color url("../asset/roadpic.jpg") no-repeat center center fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+    .head-title{
+        font-family: $font-main;
+        font-weight: 500;
+        font-size: 5rem;
+        text-align: center;
+        color: #545454;
+        opacity: 0.5;
+    }
+    ._timeline{
+        h1,span,div{
+            font-family: $font-main;
+            font-weight: normal;            
+            color: #fff;               
+        }
+        h1._headtext{
+            font-size: 1.4rem;
+            display: inline-block;     
+            border-bottom: 1px solid #fff; 
+        }
+        
+        ._content-box{
+            margin-bottom: 15px;
+            padding: 0 15px;
+            h1{
+                font-size: 1.1rem; 
+            }     
+            p{
+                border: 1px solid #fff;
+                padding: 2px 10px;
+                display: inline-block;
+            }       
+            ._info > div{
+                font-size: 1rem;         
+                display: inline-block;
+                width: 50%;     
+            }
+            ._info ._years{
+                font-style: italic;    
+                vertical-align: top;
+                text-align: right;
+                padding-right: 5vw;
+                span{
+                    font-size: 1.4rem;
+                    color: #fff;
+                    border: 1px solid #fff;
+                    padding: 0 0.7rem 0 0.5rem;
+                }
+                + div{
+                    text-align: center;
+                    span{     
+                        padding: 2px 5px 2px 5px;
+                        color: $main-color;    
+                        font-size: 1rem;
+                        max-width: 190px;
+                        display: block;                              
+                        background-color: #fff;
+                        border: 1px solid #fff;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+    .aboutme{
+        .head-title{
+            font-size: 10vw;
+            padding-bottom: 15px;
+        }
+        ._timeline{
+            h1,span,div{    
+            }
+            h1._headtext{
+                font-size: 4vw;
+                margin-bottom: 1.5vh;
+                padding-top: 2vh;
+            }
+            
+            ._content-box{
+                h1{
+                    font-size: 3vw;
+                }     
+                p{
+                }       
+                ._info > div{
+                }
+                ._info ._years{
+                    span{
+                    }
+                    + div{
+                        span{     
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    .aboutme{
+        .head-title{
+            font-size: 8vw;
+            padding-bottom: 5px;
+        }
+        ._timeline{
+            h1,span,div{    
+            }
+            h1._headtext{
+                font-size: 4vw;
+                margin-bottom: 3vh;
+            }
+            
+            ._content-box{
+                h1{
+                }     
+                p{
+                }       
+                ._info > div{
+                }
+                ._info ._years{
+                    padding-right: 2vw;
+                    span{
+                    }
+                    + div{
+                        span{     
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    .aboutme{
+        .head-title{
+            font-size: 7vw;
+        }
+        ._timeline{
+            h1,span,div{    
+            }
+            h1._headtext{
+                font-size: 3vw;
+                margin-bottom: 3vh;
+            }
+            
+            ._content-box{
+                h1{
+                }     
+                p{
+                }       
+                ._info > div{
+                }
+                ._info ._years{
+                    span{
+                    }
+                    + div{
+                        span{     
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .aboutme{
+        .head-title{
+            font-size: 6vw;
+        }
+        ._timeline{
+            h1,span,div{    
+            }
+            h1._headtext{
+                font-size: 2vw;
+                margin-bottom: 2vh;
+            }
+            
+            ._content-box{
+                h1{
+                    font-size: 1.6vw;
+                }     
+                p{
+                    font-weight: 200;
+                    font-size: 1.7rem;
+                }           
+                ._info > div{
+                }
+                ._info ._years{                    
+                    span{
+                        padding-left: 3rem;
+                        padding-right: 3rem;
+                        font-size: 1.7rem;
+                    }
+                    + div{
+
+                        span{     
+                            max-width: 300px;
+                            font-size: 1.4rem;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+} 
+
+

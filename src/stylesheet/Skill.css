@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Shrikhand");
+@import url("https://fonts.googleapis.com/css?family=Oswald:200,400,500");
+.skill > h1 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 200;
+  font-size: 8vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+.skill ._top > h1, .skill ._bottom > h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+}
+.skill ._top ._box-icon p, .skill ._bottom ._box-icon p {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+}
+.skill ._top ._box-icon div, .skill ._bottom ._box-icon div {
+  display: inline-block;
+  padding-top: 35px;
+  background-color: #292929;
+  background: url("../asset/bgcolor2.jpg") no-repeat center;
+  background-size: cover;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 20px 20px;
+  color: #fff;
+  position: relative;
+}
+.skill ._top ._box-icon div i, .skill ._bottom ._box-icon div i {
+  font-size: 2rem;
+}
+.skill ._top ._box-icon div._responsive i.fa-desktop, .skill ._bottom ._box-icon div._responsive i.fa-desktop {
+  margin: 0 0.2rem;
+}
+.skill ._top ._box-icon div._responsive i.fa-tablet-alt, .skill ._bottom ._box-icon div._responsive i.fa-tablet-alt {
+  font-size: 1.2rem;
+}
+.skill ._top ._box-icon div._responsive i.fa-mobile-alt, .skill ._bottom ._box-icon div._responsive i.fa-mobile-alt {
+  font-size: 1rem;
+}
+.skill ._top ._box-icon h1, .skill ._bottom ._box-icon h1 {
+  font-size: 5rem;
+}
+.skill ._bottom {
+  padding-top: 5vh;
+}
+
+@media (min-width: 768px) {
+  .skill ._top ._box-icon {
+    display: inline-block;
+    margin: auto 5vw;
+  }
+}
+
+/*# sourceMappingURL=Skill.css.map */

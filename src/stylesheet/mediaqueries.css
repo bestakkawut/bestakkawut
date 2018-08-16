@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Shrikhand");
+@import url("https://fonts.googleapis.com/css?family=Oswald:200,400,500");
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Shrikhand");
+@import url("https://fonts.googleapis.com/css?family=Oswald:200,400,500");
+.intro {
+  position: relative;
+  padding-top: 3.4em;
+  padding-bottom: 2.2em;
+}
+.intro ._introduce {
+  font-family: "Oswald", sans-serif;
+  text-align: left;
+}
+.intro ._introduce h1 {
+  font-weight: 200;
+  font-size: 2.4rem;
+  letter-spacing: 0.4rem;
+}
+.intro ._introduce p {
+  font-weight: 200;
+  color: #bbc0e1;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  font-style: italic;
+}
+.intro .m_introduce {
+  font-family: "Oswald", sans-serif;
+}
+.intro .m_introduce div:first-child {
+  border-right: 1px solid #292929;
+  display: inline-block;
+  padding-right: 10px;
+}
+.intro .m_introduce div:first-child h1 {
+  text-align: left;
+  font-family: "Oswald", sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+}
+.intro .m_introduce div:nth-child(2) {
+  display: inline-block;
+  padding-left: 10px;
+  text-align: left;
+}
+.intro .m_introduce div:nth-child(2) h1 {
+  font-weight: 200;
+  font-size: 3rem;
+  letter-spacing: 0.4rem;
+}
+.intro .m_introduce p {
+  margin-top: 10px;
+  font-weight: 200;
+  color: #bbc0e1;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  font-style: italic;
+}
+.intro .content._top ._container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.intro .content._top ._container > h1 {
+  text-align: left;
+  font-family: "Oswald", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 500;
+  letter-spacing: 0.4rem;
+}
+.intro .content._top ._container > h1 > span {
+  letter-spacing: 0.1rem;
+}
+.intro .content._top ._container .picture {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: -10px;
+  margin-bottom: 1.1em;
+  height: 180px;
+  background: no-repeat center url("../asset/bgbest.png");
+  background-size: 60rem;
+}
+.intro .content._top ._container .social {
+  text-align: center;
+}
+.intro .content._top ._container .social span {
+  margin-left: 15px;
+}
+.intro .content._top ._container .social span:first-child {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.intro .content._top ._container .social .text {
+  color: #bbc0e1;
+  padding-right: 20px;
+}
+.intro .content._top ._container .social .boxicon {
+  background-color: #fff;
+  color: #292929;
+  border: 1px solid #292929;
+  padding: 5px 0;
+  text-align: center;
+}
+.intro .content._top ._container .social .boxicon i {
+  width: 30px;
+}
+.intro .content._bottom {
+  top: 0;
+}
+.intro .content._bottom ._container {
+  padding-top: 5em;
+  padding-left: 5%;
+  padding-right: 1em;
+  text-align: left;
+  font-family: "Oswald", sans-serif;
+}
+
+.menu ._container button {
+  border: #292929 solid 1px;
+  background: white;
+  font: 200 1rem "Oswald", sans-serif;
+  letter-spacing: 0.2rem;
+  outline: none;
+  border-radius: 15px;
+  padding: 5px 15px;
+  margin: 0 0.5%;
+}
+.menu ._container button:hover, .menu ._container button:active {
+  background: #292929;
+  color: #fff;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+@media (min-width: 992px) {
+  .intro {
+    position: relative;
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+  }
+  .intro .content._left, .intro .content._right {
+    width: 50%;
+    height: 100%;
+    display: inline-flex;
+  }
+  .intro .content._right ._container {
+    padding-left: 5%;
+    padding-right: 1em;
+    padding-top: 5em;
+    padding-bottom: 10em;
+    border-left: #292929 solid 1px;
+    text-align: left;
+    font-family: "Oswald", sans-serif;
+  }
+  .intro .content._right ._container h1 {
+    font-weight: 200;
+    font-size: 4rem;
+    font-style: italic;
+    letter-spacing: 1.15rem;
+  }
+  .intro .content._right ._container p {
+    color: #bbc0e1;
+    font-style: italic;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+  }
+  .intro .content._left ._container {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    padding-top: 5em;
+    padding-right: 5%;
+  }
+  .intro .content._left ._container h1 {
+    text-align: right;
+    font-family: "Oswald", sans-serif;
+    font-size: 4rem;
+    font-weight: 500;
+    letter-spacing: 0.7rem;
+  }
+  .intro .content._left ._container h1 > span {
+    letter-spacing: 0.1rem;
+  }
+  .intro .content._left ._container .picture {
+    margin-top: 10px;
+    margin-right: 0;
+    margin-bottom: 1.1em;
+    padding-top: 15px;
+    height: 180px;
+  }
+  .intro .content._left ._container .social {
+    text-align: right;
+  }
+  .intro .content._left ._container .social span {
+    margin-left: 15px;
+  }
+  .intro .content._left ._container .social .text {
+    color: #bbc0e1;
+    padding-right: 20px;
+  }
+  .menu ._container {
+    padding-bottom: 5em;
+  }
+  .menu ._container button {
+    border: #292929 solid 1px;
+    background: white;
+    font: 200 2rem "Oswald", sans-serif;
+    letter-spacing: 0.2rem;
+    margin: 0 15px;
+    outline: none;
+    border-radius: 15px;
+    padding: 5px 25px;
+  }
+  .menu ._container button:hover {
+    background: #292929;
+    color: #fff;
+    transition: 0.4s;
+    cursor: pointer;
+  }
+}
+.aboutme {
+  background-color: #292929;
+}
+.aboutme .head-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 5rem;
+  color: #545454;
+}
+
+/*# sourceMappingURL=mediaqueries.css.map */
